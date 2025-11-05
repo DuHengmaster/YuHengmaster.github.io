@@ -124,28 +124,28 @@
 <body class="h-screen flex flex-col">
   <!-- 游戏主容器 -->
   <div id="game-container" class="flex-1 relative overflow-hidden">
-    <!-- 背景图层 - 相对路径：./photo/school.jpeg -->
+    <!-- 背景图层 - 完整URL -->
     <div id="background" class="absolute inset-0 bg-cover bg-center transition-opacity duration-1000 opacity-100" 
-         style="background-image: url('./photo/school.jpeg');"></div>
+         style="background-image: url('https://duhengmaster.github.io/YuHengmaster.github.io/photo/school.jpeg');"></div>
     
     <!-- 角色立绘层 -->
     <div class="absolute inset-0 flex items-end justify-between p-8 md:p-12">
-      <!-- 左侧角色：王朝洋 - 相对路径：./photo/wcy.jpg -->
+      <!-- 左侧角色：王朝洋 - 完整URL -->
       <div id="char-left" class="character-container w-1/3 md:w-1/4 opacity-0 transform translate-x-[-50px]">
-        <img src="./photo/wcy.jpg" alt="王朝洋" class="w-full h-auto object-contain drop-shadow-2xl">
+        <img src="https://duhengmaster.github.io/YuHengmaster.github.io/photo/wcy.jpg" alt="王朝洋" class="w-full h-auto object-contain drop-shadow-2xl">
       </div>
-      <!-- 右侧角色：李东凌 - 相对路径：./photo/ldl.jpg -->
+      <!-- 右侧角色：李东凌 - 完整URL -->
       <div id="char-right" class="character-container w-1/3 md:w-1/4 opacity-0 transform translate-x-[50px]">
-        <img src="./photo/ldl.jpg" alt="李东凌" class="w-full h-auto object-contain drop-shadow-2xl">
+        <img src="https://duhengmaster.github.io/YuHengmaster.github.io/photo/ldl.jpg" alt="李东凌" class="w-full h-auto object-contain drop-shadow-2xl">
       </div>
     </div>
     
     <!-- 文本对话框 -->
     <div id="dialog-box" class="dialog-box absolute bottom-0 left-0 right-0 p-6 md:p-8 transform translate-y-[100%] transition-transform duration-500 gal-border">
       <div class="flex items-start gap-4">
-        <!-- 角色头像：王朝洋 - 相对路径：./photo/lezi.jpg -->
+        <!-- 角色头像：王朝洋 - 完整URL -->
         <div id="speaker-avatar" class="w-16 h-16 md:w-20 md:h-20 rounded-full overflow-hidden border-2 border-primary/50 hidden md:block">
-          <img src="./photo/lezi.jpg" alt="角色头像" class="w-full h-full object-cover">
+          <img src="https://duhengmaster.github.io/YuHengmaster.github.io/photo/lezi.jpg" alt="角色头像" class="w-full h-full object-cover">
         </div>
         
         <!-- 对话内容区 -->
@@ -388,15 +388,15 @@
     // 游戏剧情数据 - 完善后续场景配置
     const gameScript = {
       intro: {
-        background: './photo/school.jpeg', // 相对路径
+        background: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/school.jpeg', // 完整URL
         characters: {
-          left: { src: './photo/wcy.jpg', opacity: 1 }, // 王朝洋
+          left: { src: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/wcy.jpg', opacity: 1 }, // 王朝洋
           right: { src: '', opacity: 0 } // 初始隐藏李东凌
         },
         dialogs: [
           {
             speaker: '王朝洋', // 原苏沐月
-            avatar: './photo/lezi.jpg', // 相对路径
+            avatar: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/lezi.jpg', // 完整URL
             text: '放学后的天台，微风轻轻吹拂着。你怎么会在这里？平时很少有人来这个地方呢...',
             choices: [
               {
@@ -419,27 +419,27 @@
         ]
       },
       choice1_1: {
-        background: './photo/school.jpeg', // 相对路径
+        background: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/school.jpeg', // 完整URL
         characters: {
-          left: { src: './photo/wcy.jpg', opacity: 1 }, // 王朝洋
+          left: { src: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/wcy.jpg', opacity: 1 }, // 王朝洋
           right: { src: '', opacity: 0 }
         },
         dialogs: [
           {
             speaker: '王朝洋',
-            avatar: './photo/lezi.jpg', // 相对路径
+            avatar: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/lezi.jpg', // 完整URL
             text: '诶？！单、单独见面？（脸颊泛起红晕）你...你突然这么说，我有点不知所措呢...',
             choices: []
           },
           {
             speaker: '李玹玙', // 男主名称
-            avatar: './photo/lxy.jpg', // 相对路径
+            avatar: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/lxy.jpg', // 完整URL
             text: '抱歉，是不是太直接了？其实我关注你很久了。',
             choices: []
           },
           {
             speaker: '王朝洋',
-            avatar: './photo/lezi.jpg', // 相对路径
+            avatar: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/lezi.jpg', // 完整URL
             text: '（轻轻低下头，手指绞着裙摆）我...我其实也...',
             choices: [
               {
@@ -458,27 +458,27 @@
       },
       // 完善 choice2_1 场景（直接询问）
       choice2_1: {
-        background: './photo/school.jpeg',
+        background: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/school.jpeg',
         characters: {
-          left: { src: './photo/wcy.jpg', opacity: 1 },
+          left: { src: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/wcy.jpg', opacity: 1 },
           right: { src: '', opacity: 0 }
         },
         dialogs: [
           {
             speaker: '王朝洋',
-            avatar: './photo/lezi.jpg',
+            avatar: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/lezi.jpg',
             text: '（猛地抬起头，眼睛里闪着泪光）嗯...从高一第一次见到你在图书馆帮同学捡书的时候，我就...我就喜欢上你了！',
             choices: []
           },
           {
             speaker: '李玹玙',
-            avatar: './photo/lxy.jpg',
+            avatar: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/lxy.jpg',
             text: '（轻轻握住她的手）我也是，王朝洋。可以做我的女朋友吗？',
             choices: []
           },
           {
             speaker: '王朝洋',
-            avatar: './photo/lezi.jpg',
+            avatar: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/lezi.jpg',
             text: '（用力点头，泪水滑落脸颊）嗯！我愿意！',
             choices: [
               {
@@ -497,27 +497,27 @@
       },
       // 完善 choice2_2 场景（温柔等待）
       choice2_2: {
-        background: './photo/school.jpeg',
+        background: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/school.jpeg',
         characters: {
-          left: { src: './photo/wcy.jpg', opacity: 1 },
+          left: { src: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/wcy.jpg', opacity: 1 },
           right: { src: '', opacity: 0 }
         },
         dialogs: [
           {
             speaker: '王朝洋',
-            avatar: './photo/lezi.jpg',
+            avatar: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/lezi.jpg',
             text: '（抬起头，眼神温柔而坚定）我其实也关注你很久了。你的认真、你的善良，我都看在眼里。',
             choices: []
           },
           {
             speaker: '李玹玙',
-            avatar: './photo/lxy.jpg',
+            avatar: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/lxy.jpg',
             text: '那...你愿意和我交往吗？',
             choices: []
           },
           {
             speaker: '王朝洋',
-            avatar: './photo/lezi.jpg',
+            avatar: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/lezi.jpg',
             text: '（微笑着点头）嗯，我愿意。以后请多指教啦，李玹玙同学～',
             choices: [
               {
@@ -536,15 +536,15 @@
       },
       // 完善 choice1_2 场景（看书选项）
       choice1_2: {
-        background: './photo/school.jpeg', // 相对路径
+        background: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/school.jpeg', // 完整URL
         characters: {
-          left: { src: './photo/wcy.jpg', opacity: 1 }, // 王朝洋
+          left: { src: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/wcy.jpg', opacity: 1 }, // 王朝洋
           right: { src: '', opacity: 0 }
         },
         dialogs: [
           {
             speaker: '王朝洋',
-            avatar: './photo/lezi.jpg', // 相对路径
+            avatar: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/lezi.jpg', // 完整URL
             text: '原来如此，天台确实是个安静的好地方呢。你在看什么书？',
             choices: [
               {
@@ -563,27 +563,27 @@
       },
       // 完善 choice2_3 场景（文学书籍）
       choice2_3: {
-        background: './photo/school.jpeg',
+        background: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/school.jpeg',
         characters: {
-          left: { src: './photo/wcy.jpg', opacity: 1 },
+          left: { src: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/wcy.jpg', opacity: 1 },
           right: { src: '', opacity: 0 }
         },
         dialogs: [
           {
             speaker: '王朝洋',
-            avatar: './photo/lezi.jpg',
+            avatar: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/lezi.jpg',
             text: '哇！这本书我也很喜欢！作者的文字真的很有感染力呢～',
             choices: []
           },
           {
             speaker: '李玹玙',
-            avatar: './photo/lxy.jpg',
+            avatar: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/lxy.jpg',
             text: '我记得你之前在语文课上推荐过这本书，所以特意找来看看。',
             choices: []
           },
           {
             speaker: '王朝洋',
-            avatar: './photo/lezi.jpg',
+            avatar: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/lezi.jpg',
             text: '（惊讶地睁大眼睛）你居然记得我说过的话...（脸颊微红）那...以后我们可以一起讨论这本书吗？',
             choices: [
               {
@@ -602,15 +602,15 @@
       },
       // 完善 choice2_4 场景（教科书）
       choice2_4: {
-        background: './photo/school.jpeg',
+        background: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/school.jpeg',
         characters: {
-          left: { src: './photo/wcy.jpg', opacity: 1 },
+          left: { src: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/wcy.jpg', opacity: 1 },
           right: { src: '', opacity: 0 }
         },
         dialogs: [
           {
             speaker: '王朝洋',
-            avatar: './photo/lezi.jpg',
+            avatar: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/lezi.jpg',
             text: '你真用功呢～ 其实我这科也不太好，有机会可以一起学习吗？',
             choices: [
               {
@@ -629,15 +629,15 @@
       },
       // 完善 choice1_3 场景（偶然路过）
       choice1_3: {
-        background: './photo/school.jpeg', // 相对路径
+        background: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/school.jpeg', // 完整URL
         characters: {
-          left: { src: './photo/wcy.jpg', opacity: 1 }, // 王朝洋
+          left: { src: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/wcy.jpg', opacity: 1 }, // 王朝洋
           right: { src: '', opacity: 0 }
         },
         dialogs: [
           {
             speaker: '王朝洋',
-            avatar: './photo/lezi.jpg', // 相对路径
+            avatar: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/lezi.jpg', // 完整URL
             text: '这样啊，真是巧合呢。我经常来这里散心，看着远处的风景，心情会变好很多。',
             choices: [
               {
@@ -656,27 +656,27 @@
       },
       // 完善 choice2_5 场景（陪她散心）
       choice2_5: {
-        background: './photo/school.jpeg',
+        background: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/school.jpeg',
         characters: {
-          left: { src: './photo/wcy.jpg', opacity: 1 },
+          left: { src: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/wcy.jpg', opacity: 1 },
           right: { src: '', opacity: 0 }
         },
         dialogs: [
           {
             speaker: '王朝洋',
-            avatar: './photo/lezi.jpg',
+            avatar: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/lezi.jpg',
             text: '（有些害羞）可、可以啊... 有个人陪我说话，应该会更开心吧',
             choices: []
           },
           {
             speaker: '李玹玙',
-            avatar: './photo/lxy.jpg',
+            avatar: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/lxy.jpg',
             text: '那以后每天放学后，我都来这里找你吧',
             choices: []
           },
           {
             speaker: '王朝洋',
-            avatar: './photo/lezi.jpg',
+            avatar: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/lezi.jpg',
             text: '嗯！（露出微笑）对了，我带了自制的饼干，要不要尝尝？',
             choices: [
               {
@@ -695,27 +695,27 @@
       },
       // 完善 choice2_6 场景（赞美风景）
       choice2_6: {
-        background: './photo/school.jpeg',
+        background: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/school.jpeg',
         characters: {
-          left: { src: './photo/wcy.jpg', opacity: 1 },
+          left: { src: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/wcy.jpg', opacity: 1 },
           right: { src: '', opacity: 0 }
         },
         dialogs: [
           {
             speaker: '王朝洋',
-            avatar: './photo/lezi.jpg',
+            avatar: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/lezi.jpg',
             text: '对吧～ 尤其是夕阳西下的时候，整个校园都被染成金色，超级美的',
             choices: []
           },
           {
             speaker: '李玹玙',
-            avatar: './photo/lxy.jpg',
+            avatar: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/lxy.jpg',
             text: '下次有机会想看看你说的夕阳',
             choices: []
           },
           {
             speaker: '王朝洋',
-            avatar: './photo/lezi.jpg',
+            avatar: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/lezi.jpg',
             text: '那明天放学后我在这里等你吧？一起看夕阳',
             choices: [
               {
@@ -734,10 +734,10 @@
       },
       // 结局场景（示例）
       happy_end1: {
-        background: './photo/school_garden.jpg', // 校园花园背景
+        background: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/school_garden.jpg', // 校园花园背景
         characters: {
-          left: { src: './photo/wcy.jpg', opacity: 1 },
-          right: { src: './photo/lxy.jpg', opacity: 1 } // 显示男主
+          left: { src: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/wcy.jpg', opacity: 1 },
+          right: { src: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/lxy.jpg', opacity: 1 } // 显示男主
         },
         dialogs: [
           {
@@ -748,13 +748,13 @@
           },
           {
             speaker: '李玹玙',
-            avatar: './photo/lxy.jpg',
+            avatar: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/lxy.jpg',
             text: '王朝洋，谢谢你愿意接受我。我会一直喜欢你的',
             choices: []
           },
           {
             speaker: '王朝洋',
-            avatar: './photo/lezi.jpg',
+            avatar: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/lezi.jpg',
             text: '我也是... 以后请多关照啦，男朋友～',
             choices: [
               {
@@ -767,21 +767,21 @@
         ]
       },
       happy_end2: {
-        background: './photo/school_garden.jpg',
+        background: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/school_garden.jpg',
         characters: {
-          left: { src: './photo/wcy.jpg', opacity: 1 },
-          right: { src: './photo/lxy.jpg', opacity: 1 }
+          left: { src: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/wcy.jpg', opacity: 1 },
+          right: { src: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/lxy.jpg', opacity: 1 }
         },
         dialogs: [
           {
             speaker: '李玹玙',
-            avatar: './photo/lxy.jpg',
+            avatar: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/lxy.jpg',
             text: '别哭啦，以后我会一直陪着你的',
             choices: []
           },
           {
             speaker: '王朝洋',
-            avatar: './photo/lezi.jpg',
+            avatar: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/lezi.jpg',
             text: '嗯... 有你在真好',
             choices: []
           },
@@ -801,10 +801,10 @@
       },
       // 其他结局场景（简化示例）
       happy_end3: {
-        background: './photo/cinema.jpg',
+        background: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/cinema.jpg',
         characters: {
-          left: { src: './photo/wcy.jpg', opacity: 1 },
-          right: { src: './photo/lxy.jpg', opacity: 1 }
+          left: { src: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/wcy.jpg', opacity: 1 },
+          right: { src: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/lxy.jpg', opacity: 1 }
         },
         dialogs: [
           {
@@ -815,13 +815,13 @@
           },
           {
             speaker: '王朝洋',
-            avatar: './photo/lezi.jpg',
+            avatar: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/lezi.jpg',
             text: '电影真好看，谢谢你邀请我',
             choices: []
           },
           {
             speaker: '李玹玙',
-            avatar: './photo/lxy.jpg',
+            avatar: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/lxy.jpg',
             text: '能和你一起看，才是最好的',
             choices: [
               {
@@ -834,10 +834,10 @@
         ]
       },
       happy_end4: {
-        background: './photo/library.jpg',
+        background: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/library.jpg',
         characters: {
-          left: { src: './photo/wcy.jpg', opacity: 1 },
-          right: { src: './photo/lxy.jpg', opacity: 1 }
+          left: { src: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/wcy.jpg', opacity: 1 },
+          right: { src: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/lxy.jpg', opacity: 1 }
         },
         dialogs: [
           {
@@ -848,13 +848,13 @@
           },
           {
             speaker: '王朝洋',
-            avatar: './photo/lezi.jpg',
+            avatar: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/lezi.jpg',
             text: '和你一起学习，效率都变高了呢',
             choices: []
           },
           {
             speaker: '李玹玙',
-            avatar: './photo/lxy.jpg',
+            avatar: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/lxy.jpg',
             text: '因为有你在身边啊',
             choices: [
               {
@@ -867,10 +867,10 @@
         ]
       },
       friend_to_love1: {
-        background: './photo/bookstore.jpg',
+        background: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/bookstore.jpg',
         characters: {
-          left: { src: './photo/wcy.jpg', opacity: 1 },
-          right: { src: './photo/lxy.jpg', opacity: 1 }
+          left: { src: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/wcy.jpg', opacity: 1 },
+          right: { src: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/lxy.jpg', opacity: 1 }
         },
         dialogs: [
           {
@@ -881,13 +881,13 @@
           },
           {
             speaker: '王朝洋',
-            avatar: './photo/lezi.jpg',
+            avatar: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/lezi.jpg',
             text: '李玹玙，其实...我喜欢你很久了',
             choices: []
           },
           {
             speaker: '李玹玙',
-            avatar: './photo/lxy.jpg',
+            avatar: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/lxy.jpg',
             text: '我也是，王朝洋',
             choices: [
               {
@@ -900,10 +900,10 @@
         ]
       },
       game_end: {
-        background: './photo/graduation.jpg',
+        background: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/graduation.jpg',
         characters: {
-          left: { src: './photo/wcy.jpg', opacity: 1 },
-          right: { src: './photo/lxy.jpg', opacity: 1 }
+          left: { src: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/wcy.jpg', opacity: 1 },
+          right: { src: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/lxy.jpg', opacity: 1 }
         },
         dialogs: [
           {
@@ -926,7 +926,7 @@
         ]
       },
       main_menu: {
-        background: './photo/school.jpeg',
+        background: 'https://duhengmaster.github.io/YuHengmaster.github.io/photo/school.jpeg',
         characters: {
           left: { src: '', opacity: 0 },
           right: { src: '', opacity: 0 }
@@ -971,62 +971,95 @@
       elements.startGame.addEventListener('click', startNewGame);
       elements.continueGame.addEventListener('click', continueGame);
       elements.gameSettings.addEventListener('click', () => showSettings(true));
-      elements.closeMenu.addEventListener('click', () => showGameMenu(false));
-      
-      // 游戏控制
-      elements.nextBtn.addEventListener('click', nextDialog);
-      elements.saveBtn.addEventListener('click', () => showSaveLoadModal(true, 'save'));
-      elements.loadBtn.addEventListener('click', () => showSaveLoadModal(true, 'load'));
-      elements.settingsBtn.addEventListener('click', () => showSettings(true));
-      
-      // 存档/读档
-      elements.closeSaveLoad.addEventListener('click', () => showSaveLoadModal(false));
-      elements.saveTab.addEventListener('click', () => switchSaveLoadTab('save'));
-      elements.loadTab.addEventListener('click', () => switchSaveLoadTab('load'));
-      
-      // 设置
-      elements.closeSettings.addEventListener('click', () => showSettings(false));
-      elements.bgmVolume.addEventListener('input', updateVolume);
-      elements.seVolume.addEventListener('input', updateVolume);
-      elements.textSpeed.addEventListener('change', updateTextSpeed);
-      
-      // 存档槽位点击
-      document.querySelectorAll('#save-load-modal .grid > div').forEach((slot, index) => {
-        slot.addEventListener('click', () => {
-          if (elements.saveTab.classList.contains('text-primary')) {
-            saveGame(index);
-          } else {
-            loadGame(index);
+            choice1_2: {
+        background: './photo/school.jpeg',
+        characters: {
+          left: { src: './photo/wcy.jpg', opacity: 1 },
+          right: { src: '', opacity: 0 }
+        },
+        dialogs: [
+          {
+            speaker: '王朝洋',
+            avatar: './photo/lezi.jpg',
+            text: '原来是这样啊...这里确实很安静呢，风也很舒服。',
+            choices: []
+          },
+          {
+            speaker: '王朝洋',
+            avatar: './photo/lezi.jpg',
+            text: '你在看什么书呢？可以给我看看吗？',
+            choices: [
+              {
+                text: '递给她看，并邀请一起阅读',
+                nextScene: 'choice2_3',
+                affinity: { 王朝洋: 4 }
+              },
+              {
+                text: '有点不好意思地说这是漫画',
+                nextScene: 'choice2_4',
+                affinity: { 王朝洋: 2 }
+              }
+            ]
           }
-        });
-      });
-    }
+        ]
+      },
+      choice1_3: {
+        background: './photo/school.jpeg',
+        characters: {
+          left: { src: './photo/wcy.jpg', opacity: 1 },
+          right: { src: '', opacity: 0 }
+        },
+        dialogs: [
+          {
+            speaker: '王朝洋',
+            avatar: './photo/lezi.jpg',
+            text: '这样啊...我经常来这里午休，感觉这里很舒服。',
+            choices: []
+          },
+          {
+            speaker: '李玹玙',
+            avatar: './photo/lxy.jpg',
+            text: '确实，比教室安静多了。',
+            choices: []
+          },
+          {
+            speaker: '王朝洋',
+            avatar: './photo/lezi.jpg',
+            text: '对了，下周的文化祭，你有什么打算吗？',
+            choices: [
+              {
+                text: '还没想法，你有什么建议吗？',
+                nextScene: 'choice2_5',
+                affinity: { 王朝洋: 3 }
+              },
+              {
+                text: '打算和朋友一起参加活动',
+                nextScene: 'choice2_6',
+                affinity: { 王朝洋: 1 }
+              }
+            ]
+          }
+        ]
+      },
+      // 后续场景可以继续在这里添加...
+    };
     
-    // 更新文本速度
-    function updateTextSpeed() {
-      gameState.textSpeed = parseInt(elements.textSpeed.value);
+    // 初始化游戏
+    function initGame() {
+      // 显示游戏菜单
+      showElement(elements.gameMenu);
+      
+      // 绑定事件监听器
+      bindEventListeners();
     }
     
     // 开始新游戏
     function startNewGame() {
-      showGameMenu(false);
-      gameState.currentScene = 'intro';
-      gameState.characterAffinity = { 王朝洋: 0, 李东凌: 0 };
-      loadScene(gameState.currentScene);
-    }
-    
-    // 继续游戏
-    function continueGame() {
-      if (gameState.saveSlots.length > 0) {
-        const latestSave = gameState.saveSlots[0];
-        gameState.currentScene = latestSave.scene;
-        gameState.characterAffinity = latestSave.affinity;
-        showGameMenu(false);
-        loadScene(gameState.currentScene);
-      } else {
-        alert('没有找到存档数据，将开始新游戏');
-        startNewGame();
-      }
+      hideElement(elements.gameMenu);
+      setTimeout(() => {
+        showElement(elements.dialogBox);
+        loadScene('intro');
+      }, 300);
     }
     
     // 加载场景
@@ -1034,110 +1067,77 @@
       const scene = gameScript[sceneName];
       if (!scene) return;
       
-      // 特殊处理：返回主菜单
-      if (sceneName === 'return_menu') {
-        showGameMenu(true);
-        return;
-      }
+      gameState.currentScene = sceneName;
       
       // 更新背景
       elements.background.style.backgroundImage = `url('${scene.background}')`;
       
       // 更新角色
-      updateCharacter('left', scene.characters.left);
-      updateCharacter('right', scene.characters.right);
+      updateCharacter(elements.charLeft, scene.characters.left);
+      updateCharacter(elements.charRight, scene.characters.right);
       
       // 加载对话
-      loadDialogs(scene.dialogs);
-      
-      // 显示对话框
-      setTimeout(() => {
-        elements.dialogBox.style.transform = 'translateY(0)';
-      }, 500);
+      loadDialogs(scene.dialogs, 0);
     }
     
     // 更新角色显示
-    function updateCharacter(position, charData) {
-      const charElement = elements[`char${position.charAt(0).toUpperCase() + position.slice(1)}`];
+    function updateCharacter(element, charData) {
       if (charData.src) {
-        charElement.querySelector('img').src = charData.src;
-        charElement.style.opacity = charData.opacity;
-        charElement.style.transform = 'translateX(0)';
+        element.querySelector('img').src = charData.src;
+        element.style.opacity = charData.opacity;
+        element.style.transform = 'translateX(0)';
       } else {
-        charElement.style.opacity = 0;
-        charElement.style.transform = position === 'left' ? 'translateX(-50px)' : 'translateX(50px)';
+        element.style.opacity = 0;
+        element.style.transform = element.id === 'char-left' ? 'translateX(-50px)' : 'translateX(50px)';
       }
     }
     
-    // 加载对话序列
-    let currentDialogIndex = 0;
-    let currentDialogs = [];
-    
-    function loadDialogs(dialogs) {
-      currentDialogs = dialogs;
-      currentDialogIndex = 0;
-      showCurrentDialog();
-    }
-    
-    // 显示当前对话
-    function showCurrentDialog() {
-      if (currentDialogIndex >= currentDialogs.length) {
-        // 对话结束，自动进入下一场景（如果有）
+    // 加载对话
+    function loadDialogs(dialogs, index) {
+      if (index >= dialogs.length) {
+        // 对话结束，检查是否有下一场景
         return;
       }
       
-      const dialog = currentDialogs[currentDialogIndex];
+      const dialog = dialogs[index];
       
-      // 更新说话人信息
+      // 更新对话者信息
       elements.speakerName.textContent = dialog.speaker;
-      if (dialog.avatar) {
-        elements.speakerAvatar.querySelector('img').src = dialog.avatar;
-        elements.speakerAvatar.style.display = 'block';
-      } else {
-        elements.speakerAvatar.style.display = 'none';
-      }
+      elements.speakerAvatar.querySelector('img').src = dialog.avatar;
       
-      // 显示对话文本（带打字机效果）
-      typeText(dialog.text);
+      // 清空选项
+      elements.choices.innerHTML = '';
       
-      // 显示选项
-      showChoices(dialog.choices);
-      
-      // 更新"继续"按钮状态
-      elements.nextBtn.style.display = dialog.choices.length > 0 ? 'none' : 'block';
+      // 显示对话文本（带打字效果）
+      typeText(elements.dialogText, dialog.text, 0, () => {
+        // 文本显示完成后显示选项或继续按钮
+        if (dialog.choices && dialog.choices.length > 0) {
+          // 显示选项
+          showChoices(dialog.choices);
+          elements.nextBtn.style.display = 'none';
+        } else {
+          // 显示继续按钮
+          elements.nextBtn.style.display = 'block';
+          elements.nextBtn.onclick = () => loadDialogs(dialogs, index + 1);
+        }
+      });
     }
     
-    // 打字机效果显示文本
-    function typeText(text) {
-      elements.dialogText.textContent = '';
-      
-      let index = 0;
-      const speed = gameState.textSpeed === 1 ? 100 : 
-                   gameState.textSpeed === 2 ? 50 : 
-                   gameState.textSpeed === 3 ? 20 : 0;
-      
-      if (speed === 0) {
-        elements.dialogText.textContent = text;
-        return;
+    // 打字效果
+    function typeText(element, text, index, callback) {
+      if (index < text.length) {
+        element.textContent = text.substring(0, index + 1);
+        // 根据文本速度调整延迟
+        const delay = [100, 50, 20, 0][gameState.textSpeed - 1];
+        setTimeout(() => typeText(element, text, index + 1, callback), delay);
+      } else {
+        if (callback) callback();
       }
-      
-      const interval = setInterval(() => {
-        if (index < text.length) {
-          elements.dialogText.textContent += text.charAt(index);
-          index++;
-        } else {
-          clearInterval(interval);
-        }
-      }, speed);
     }
     
     // 显示选项
     function showChoices(choices) {
-      elements.choices.innerHTML = '';
-      
-      if (choices.length === 0) return;
-      
-      choices.forEach((choice, index) => {
+      choices.forEach(choice => {
         const button = document.createElement('button');
         button.className = 'choice-btn bg-primary/10 hover:bg-primary/20 text-light py-3 px-4 rounded gal-border text-left';
         button.innerHTML = `<i class="fa fa-heart text-primary mr-2"></i>${choice.text}`;
@@ -1149,157 +1149,100 @@
               gameState.characterAffinity[char] += choice.affinity[char];
             }
           }
-          
-          // 进入下一场景
-          if (choice.nextScene) {
-            gameState.currentScene = choice.nextScene;
-            // 重置对话索引
-            currentDialogIndex = 0;
-            loadScene(gameState.currentScene);
-          }
+          // 加载下一场景
+          loadScene(choice.nextScene);
         });
         
         elements.choices.appendChild(button);
       });
     }
     
-    // 下一段对话
-    function nextDialog() {
-      currentDialogIndex++;
-      showCurrentDialog();
-    }
-    
-    // 显示/隐藏游戏菜单
-    function showGameMenu(show) {
-      if (show) {
-        elements.gameMenu.style.opacity = 1;
-        elements.gameMenu.style.pointerEvents = 'auto';
-      } else {
-        elements.gameMenu.style.opacity = 0;
-        elements.gameMenu.style.pointerEvents = 'none';
+    // 显示元素
+    function showElement(element) {
+      element.classList.remove('opacity-0', 'pointer-events-none');
+      if (element.id === 'dialog-box') {
+        element.style.transform = 'translateY(0)';
       }
     }
     
-    // 显示/隐藏存档/读档界面
-    function showSaveLoadModal(show, type = 'save') {
-      if (show) {
-        elements.saveLoadModal.style.opacity = 1;
-        elements.saveLoadModal.style.pointerEvents = 'auto';
-        switchSaveLoadTab(type);
-      } else {
-        elements.saveLoadModal.style.opacity = 0;
-        elements.saveLoadModal.style.pointerEvents = 'none';
+    // 隐藏元素
+    function hideElement(element) {
+      element.classList.add('opacity-0', 'pointer-events-none');
+      if (element.id === 'dialog-box') {
+        element.style.transform = 'translateY(100%)';
       }
     }
     
-    // 切换存档/读档标签
-    function switchSaveLoadTab(type) {
-      if (type === 'save') {
-        elements.saveTab.classList.add('text-primary', 'border-b-2', 'border-primary');
-        elements.saveTab.classList.remove('text-gray-400');
-        elements.loadTab.classList.add('text-gray-400');
-        elements.loadTab.classList.remove('text-primary', 'border-b-2', 'border-primary');
-        document.getElementById('save-load-title').textContent = '存档管理';
-      } else {
-        elements.loadTab.classList.add('text-primary', 'border-b-2', 'border-primary');
-        elements.loadTab.classList.remove('text-gray-400');
+    // 绑定事件监听器
+    function bindEventListeners() {
+      // 菜单按钮
+      elements.startGame.addEventListener('click', startNewGame);
+      elements.continueGame.addEventListener('click', () => {
+        hideElement(elements.gameMenu);
+        setTimeout(() => showElement(elements.dialogBox), 300);
+      });
+      elements.gameSettings.addEventListener('click', () => {
+        hideElement(elements.gameMenu);
+        showElement(elements.settingsModal);
+      });
+      elements.closeMenu.addEventListener('click', () => hideElement(elements.gameMenu));
+      
+      // 存档/读档按钮
+      elements.saveBtn.addEventListener('click', () => showElement(elements.saveLoadModal));
+      elements.loadBtn.addEventListener('click', () => {
+        showElement(elements.saveLoadModal);
+        elements.saveTab.classList.remove('text-primary', 'border-primary', 'border-b-2');
         elements.saveTab.classList.add('text-gray-400');
-        elements.saveTab.classList.remove('text-primary', 'border-b-2', 'border-primary');
-        document.getElementById('save-load-title').textContent = '读档管理';
-      }
-    }
-    
-    // 显示/隐藏设置界面
-    function showSettings(show) {
-      if (show) {
-        elements.settingsModal.style.opacity = 1;
-        elements.settingsModal.style.pointerEvents = 'auto';
-        
-        // 初始化设置值
-        elements.bgmVolume.value = gameState.volumes.bgm;
-        elements.seVolume.value = gameState.volumes.se;
-        elements.textSpeed.value = gameState.textSpeed;
-      } else {
-        elements.settingsModal.style.opacity = 0;
-        elements.settingsModal.style.pointerEvents = 'none';
-      }
-    }
-    
-    // 更新音量设置
-    function updateVolume() {
-      gameState.volumes.bgm = parseInt(elements.bgmVolume.value);
-      gameState.volumes.se = parseInt(elements.seVolume.value);
+        elements.loadTab.classList.add('text-primary', 'border-primary', 'border-b-2');
+        elements.loadTab.classList.remove('text-gray-400');
+        elements.saveLoadTitle.textContent = '读档管理';
+      });
+      elements.closeSaveLoad.addEventListener('click', () => hideElement(elements.saveLoadModal));
       
-      // 更新显示文本
-      elements.bgmVolume.nextElementSibling.textContent = `${gameState.volumes.bgm}%`;
-      elements.seVolume.nextElementSibling.textContent = `${gameState.volumes.se}%`;
+      // 存档/读档标签切换
+      elements.saveTab.addEventListener('click', () => {
+        elements.saveTab.classList.add('text-primary', 'border-primary', 'border-b-2');
+        elements.saveTab.classList.remove('text-gray-400');
+        elements.loadTab.classList.remove('text-primary', 'border-primary', 'border-b-2');
+        elements.loadTab.classList.add('text-gray-400');
+        elements.saveLoadTitle.textContent = '存档管理';
+      });
       
-      // 实际项目中这里会更新音频音量
+      elements.loadTab.addEventListener('click', () => {
+        elements.loadTab.classList.add('text-primary', 'border-primary', 'border-b-2');
+        elements.loadTab.classList.remove('text-gray-400');
+        elements.saveTab.classList.remove('text-primary', 'border-primary', 'border-b-2');
+        elements.saveTab.classList.add('text-gray-400');
+        elements.saveLoadTitle.textContent = '读档管理';
+      });
+      
+      // 设置按钮
+      elements.settingsBtn.addEventListener('click', () => showElement(elements.settingsModal));
+      elements.closeSettings.addEventListener('click', () => hideElement(elements.settingsModal));
+      
+      // 音量滑块
+      elements.bgmVolume.addEventListener('input', (e) => {
+        const value = e.target.value;
+        e.target.nextElementSibling.textContent = `${value}%`;
+        gameState.volumes.bgm = parseInt(value);
+        // 这里可以添加实际调整音量的代码
+      });
+      
+      elements.seVolume.addEventListener('input', (e) => {
+        const value = e.target.value;
+        e.target.nextElementSibling.textContent = `${value}%`;
+        gameState.volumes.se = parseInt(value);
+        // 这里可以添加实际调整音量的代码
+      });
+      
+      // 文本速度选择
+      elements.textSpeed.addEventListener('change', (e) => {
+        gameState.textSpeed = parseInt(e.target.value);
+      });
     }
     
-    // 保存游戏进度
-    function saveGame(slotIndex = 0) {
-      const saveData = {
-        scene: gameState.currentScene,
-        dialogIndex: currentDialogIndex,
-        affinity: { ...gameState.characterAffinity },
-        timestamp: new Date().toLocaleString(),
-        description: `${currentDialogs[currentDialogIndex]?.speaker || '未知'}: ${currentDialogs[currentDialogIndex]?.text?.substring(0, 20) || '游戏进度'}`
-      };
-      
-      // 保存到本地存储
-      gameState.saveSlots[slotIndex] = saveData;
-      localStorage.setItem('galgameSaves', JSON.stringify(gameState.saveSlots));
-      
-      // 更新存档显示
-      const slotElements = document.querySelectorAll('#save-load-modal .grid > div');
-      if (slotElements[slotIndex]) {
-        slotElements[slotIndex].querySelector('.text-xs').textContent = saveData.timestamp;
-        slotElements[slotIndex].querySelector('p').textContent = saveData.description;
-        slotElements[slotIndex].querySelector('p').classList.remove('text-gray-500');
-        slotElements[slotIndex].querySelector('p').classList.add('text-gray-300');
-      }
-      
-      alert('存档成功！');
-      showSaveLoadModal(false);
-    }
-    
-    // 加载游戏进度
-    function loadGame(slotIndex = 0) {
-      if (gameState.saveSlots[slotIndex]) {
-        const saveData = gameState.saveSlots[slotIndex];
-        gameState.currentScene = saveData.scene;
-        gameState.characterAffinity = saveData.affinity;
-        currentDialogIndex = saveData.dialogIndex;
-        
-        showSaveLoadModal(false);
-        loadScene(gameState.currentScene);
-      } else {
-        alert('该存档位无数据');
-      }
-    }
-    
-    // 加载存档数据
-    function loadSaveData() {
-      const savedData = localStorage.getItem('galgameSaves');
-      if (savedData) {
-        gameState.saveSlots = JSON.parse(savedData);
-        
-        // 更新存档显示
-        const slotElements = document.querySelectorAll('#save-load-modal .grid > div');
-        gameState.saveSlots.forEach((save, index) => {
-          if (slotElements[index] && save) {
-            slotElements[index].querySelector('.text-xs').textContent = save.timestamp;
-            slotElements[index].querySelector('p').textContent = save.description;
-            slotElements[index].querySelector('p').classList.remove('text-gray-500');
-            slotElements[index].querySelector('p').classList.add('text-gray-300');
-          }
-        });
-      }
-    }
-    
-    // 页面加载完成后初始化游戏
-    document.addEventListener('DOMContentLoaded', initGame);
+    // 游戏启动
+    window.addEventListener('DOMContentLoaded', initGame);
   </script>
 </body>
 </html>
